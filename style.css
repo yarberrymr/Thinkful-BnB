@@ -1,0 +1,253 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100px;
+}
+#host ul {
+  margin: 10px;
+  justify-content: left;
+}
+#ideas .group {
+  margin: 10px 20px 10px 10px;
+}
+#host .item {
+  justify-items: center;
+}
+#about p {
+  align-self: center;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  flex: 1;
+  margin: 10px;
+  align-self: center;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 16vw;
+  color: #fff;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: space-between;
+}
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-size: 4vw
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form{
+  border: 2px solid #ff385c;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+ form .location-search, .arrive-search, .depart-search, .type-search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form label {
+  font-weight: bold;
+  padding-right: 50px;
+  text-align: left;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+  min-width: 50px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+}
+
+/* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  #menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  header nav ul li a {
+    font-size: 2vw
+  }
+  .logo {
+    font-size: 72px;
+    
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rental-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  form .location-search, .arrive-search, .depart-search, .type-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  form input, form select {
+    margin-right:10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  form button {
+    display:flex;
+    flex-direction: column;
+    margin-left: 5px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .group {
+    flex-direction: row;
+  }
+  #about .group p {
+    flex: 2;
+    font-size: 2vmin;
+  }
+  .item {
+    width: 50%
+  }
+#about .item {
+  width: 25%;
+}
+.first-row, .second-row {
+  display: flex;
+  flex-direction: row;
+}
+.forest {
+  margin-right: 10px;
+}
+.rustic {
+  margin-right: 10px;
+}
+#ideas .group {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+#ideas .item {
+  width: 100%;
+  max-width: 2000px;
+}
+#host .group {
+  display: flex;
+  flex-direction: row;
+}
+.host-info {
+  justify-self: center;
+  align-self: center;
+}
+.host-info h2 {
+  font-size: 3.5vmin;
+}
+.host-info p, ul li {
+  font-size: 2vmin;
+}
+}
